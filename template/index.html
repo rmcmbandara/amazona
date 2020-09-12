@@ -10,6 +10,7 @@
      <div class="grid-container">
           <header class="header">
                <div class="brand">
+                    <button onclick="openMenu()">&#9776;</button>
                     <a href="index.html">Amazona</a>
                </div>
                <div class="header-links">
@@ -17,7 +18,18 @@
                     <a href="signin">signin</a>
                </div>
           </header>
-
+          <aside class="sidebar">
+               <h3>Shopping Catogeries</h3>
+               <button class="sidebar-close-button" onclick="closeMenu()">X</button>
+               <ul>
+                    <li>
+                         <a href="index.html">Pant</a>
+                    </li>
+                    <li>
+                         <a href="index.thml">Shirts</a>
+                    </li>
+               </ul>
+          </aside>
           <main class="main">
                <ul class="products">
                     <li>
@@ -71,7 +83,8 @@
                               <div class="product-price">$60</div>
                               <div class="product-rating">4.5 Stars (10 Reviews)</div>
                          </div>
-                    </li><li>
+                    </li>
+                    <li>
                          <div class="product">
                               <a href="product.thml">
                                    <img class="product-image" src="images/d1.jpg" alt="product" />
@@ -103,6 +116,14 @@
                All right reserved.
           </footer>
      </div>
+     <script>
+         function openMenu() {
+      document.querySelector(".sidebar").classList.add("open");
+    }
+    function closeMenu() {
+      document.querySelector(".sidebar").classList.remove("open")
+    }
+     </script>
 </body>
 
 </html>
