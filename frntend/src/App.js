@@ -39,7 +39,8 @@ const App = () => {
         </aside>
         <main className="main">
           <div className="content">
-           <Route path="/" exact={tru} component={HomeScreen}/>
+            <Route path="/products/:id" component={ProductScreen} />
+            <Route path="/" exact={true} component={HomeScreen} />
             <ul className="products">
               {
                 data.products.map(product =>
