@@ -117,6 +117,7 @@ a:hover{
 }
 .sidebar{
      position: fixed;
+     transition: .1s;
      transform: translateX(-30rem);
      width: 30rem;
      background-color: gainsboro;
