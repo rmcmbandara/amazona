@@ -14,12 +14,11 @@ const HomeScreen = (props) => {
     fetchData();
   }, [])
 
-console.log(products);
      return (
           <ul className="products">
               {
                 products.map(product =>
-                  <li>
+                  <li key={product._id}>
                     <div className="product">
                       <Link to={"/product/"+product._id} href="product.thml">
                         <img className="product-image" src="/images/d1.jpg" alt="product" />
