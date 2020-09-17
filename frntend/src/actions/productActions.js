@@ -24,6 +24,11 @@ import { PRODUCT_LIST_REQUEST, PRODUCT_LIST_SUCCESS, PRODUCT_LIST_FAIL,
        dispatch({ type: PRODUCT_DETAILS_FAIL, payload: error.message });
    
      }
-   }
+}
+
+
+   
+
+
    
    export { listProducts, detailsProduct }
